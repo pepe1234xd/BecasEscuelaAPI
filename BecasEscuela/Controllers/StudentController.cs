@@ -58,7 +58,7 @@ namespace BecasEscuela.Controllers
 
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> DeleteRegionAsync(int id)
+        public async Task<IActionResult> DeleteStudentAsync(int id)
         {
             //get region form db
             var student = await studentRepository.DeleteAsync(id);
