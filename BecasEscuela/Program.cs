@@ -19,6 +19,7 @@ builder.Services.AddDbContext<dbConnection>(options =>
 
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IBecasRepository, BecaRepository>();
+builder.Services.AddScoped<IAlumnoBecaRepository, AlumnoBecaRepository>();
 
 var app = builder.Build();
 
